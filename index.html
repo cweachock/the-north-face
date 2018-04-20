@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+
+<div ng-app="featured-collection" ng-controller="collectionCtrl"> 
+
+<ul>
+  <li ng-repeat="x in featuredCollection">
+    {{ x.thumbnailDesktop + ', ' + x.jcsr:title }}
+  </li>
+</ul>
+
+
+
+
+
+<script>
+var app = angular.module('featured-collection', []);
+app.controller('collectionCtrl', function($scope, $http) {
+    $http.get("main.js").then(function(response) {
+        $scope.featuredCollection = response.data.records;
+    });
+});
+</script> 
+</body>
+</html>
+
