@@ -16,6 +16,9 @@ p{
   font-size:1em;
   line-height:1.5em;
   text-align:center;
+  padding:1em;
+  border-left:1px;
+
 }
 
 h1{
@@ -48,7 +51,7 @@ div {
 }
 
 .textContainer{
-  height:200px;
+  height:100%;
   background:#000000;
 }
 
@@ -56,11 +59,10 @@ div {
 z-index:1;
 position:relative;
 background:#000000;
+height:100%;
 }
 
-img #promoContent{
-  max-width:400px;
-}
+
 
 .promoContent a {
   width:100px;
@@ -72,6 +74,8 @@ img #promoContent{
 
 .promoContent p {
   color: #fff;
+  border-left:solid;
+  border-color:#E65100;;
   max-width:600px;
 }
 .productCopy{
@@ -145,7 +149,10 @@ img #promoContent{
 
 @media screen and (max-width : 640px) and (orientation: portrait) { 
 
-
+.promoContent a{
+  text-align:left;
+  margin-left:1.5em;
+}
 
 .productCopy{
   max-width:100%;
