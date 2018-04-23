@@ -1,7 +1,6 @@
-var responseSpoof = {
-   "total":8,
-   "hits":[  
-      {  
+{ "hits":
+    [
+       {  
          "jcr:path":"https://www.thenorthface.com/featured/apex-flex.html",
          "jcr:title":"APEX FLEX GTX",
          "articleDate":"2018-02-13",
@@ -97,7 +96,5 @@ var responseSpoof = {
          "thumbnailMobile":"https://images.thenorthface.com/is/image/TheNorthFaceBrand/042517-homepage-espot-Flight?scl=1",
          "teaserText":"Flight Series™ is our race-ready runing gear featuring our most innovative technologies and fabrics."
       }
-   ]};
-
-var parsedData = JSON.parse(JSON.stringify(responseSpoof))
-console.log(parsed)
+    ]
+}

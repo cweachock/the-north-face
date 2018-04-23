@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Concise Handlebars.js</title>
+    <!-- 0a. CSS -->
+    <link rel="stylesheet" href="style.css">
+ 
+<script src="https://use.fontawesome.com/4ef6a233e0.js"></script>
 
-
-<div ng-app="featured-collection" ng-controller="collectionCtrl"> 
-
-<ul>
-  <li ng-repeat="x in featuredCollection">
-    {{ x.thumbnailDesktop + ', ' + x.jcr:title }}
-  </li>
-</ul>
-
-
-
-
-
-<script>
-var app = angular.module('featured-collection', []);
-app.controller('collectionCtrl', function($scope, $http) {
-    $http.get("main.js").then(function(response) {
-        $scope.featuredCollection = response.data.records;
-    });
-});
-</script> 
-</body>
+    <!-- 0a. JS -->
+    <script src="js/jquery-2.0.3.min.js"></script><!-- jquery.js -->
+    <script src="js/handlebars-v4.0.11.js"></script><!-- handlebars.js-->
+  </head>
+ 
+  <body>
+    <!--1. Data (json format!) -->
+    <script>
+    var url='data.json'; // relative url : 'data.json'; protocole-relative absolute url: '//website.org/path/to/data.json';
+    </script>
+ 
+    <!-- 2. Anchor -->
+    <div id="anchor"></div>
+ 
+    <!-- 3. Template -->
+    <script id="tpl" type="text/template">
+        {{#hits}}
+            <div class="blockContent">
+            
+              <img id="featuredImgLarge" src="{{thumbnailDesktop}}">
+              <img id="featuredImgMedium" src="{{thumbnailTablet}}">
+              <img id="featuredImgSmall" src="{{thumbnailMobile}}">
+              <div class="productCopy">
+              
+              <h1>{{jcr:title}}</h1><a class="shopNowSmall" href="{{jcr:path}}"> Shop Now </a>
+              <h3>{{teaserText}}</h3>
+              
+              </div>
+            </div>
+        {{/hits}}
+    </script>
+ 
+    <!--4. Handlebars.js slingshot -->
+    <script>
+    //4a.function creation
+    var slingshot = function (url, tplId, anchor) {
+     $.getJSON(url, function(data) {
+              var template = $(tplId).html();
+              var stone = Handlebars.compile(template)(data);
+              $(anchor).append(stone);
+     });
+  }
+    //4b.function firing
+    slingshot('data.json', '#tpl', '#anchor'); // since url = 'data.json' , we can use both notations.
+    </script>
+  </body>
 </html>
-
