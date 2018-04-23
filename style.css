@@ -109,7 +109,10 @@ div {
       }
   }
 
-@media screen and (max-width : 760px) and (orientation: portrait) { 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)  { 
 
 .productCopy{
   max-width:100%;
