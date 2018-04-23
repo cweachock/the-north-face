@@ -11,6 +11,12 @@ a {
  border-bottom:solid;
 }
 
+p{
+  font-family:helvetica;
+  font-size:1em;
+  line-height:1.5em;
+  text-align:center;
+}
 
 h1{
   font-family:helvetica;
@@ -41,10 +47,38 @@ div {
   color: #333;
 }
 
+.textContainer{
+  height:200px;
+  background:#000000;
+}
+
+.promoContent{
+z-index:1;
+position:relative;
+background:#000000;
+}
+
+img #promoContent{
+  max-width:400px;
+}
+
+.promoContent a {
+  width:100px;
+  margin:auto;
+  position:relative;
+  text-align:center;
+  margin-bottom:2em;
+}
+
+.promoContent p {
+  color: #fff;
+  max-width:600px;
+}
 .productCopy{
   background-color:#fff;
-  position:absolute;
+  position:relative;
   bottom:0px;
+  margin-top:-300px;
   padding-right:2em;
   padding-left:1em;
   max-width:60%;
@@ -111,9 +145,12 @@ div {
 
 @media screen and (max-width : 640px) and (orientation: portrait) { 
 
+
+
 .productCopy{
   max-width:100%;
   position:relative;
+  margin-top:0px;
  }
  .shopNowSmall{
   display:inline;
@@ -124,6 +161,10 @@ div {
   margin-bottom:2em;
  }
 
+p{
+  
+  text-align:left;
+}
 h1{
   width:100%;
   font-size:2.5em;

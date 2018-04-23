@@ -26,15 +26,24 @@
         {{#hits}}
             <div class="blockContent">
             
-              <img id="featuredImgLarge" src="{{thumbnailDesktop}}">
-              <img id="featuredImgMedium" src="{{thumbnailTablet}}">
-              <img id="featuredImgSmall" src="{{thumbnailMobile}}">
+              <img id="featuredImgLarge" src="{{thumbnailDesktop}}" alt="The North Face {{jcr:title}}">
+              <img id="featuredImgMedium" src="{{thumbnailTablet}}" alt="The North Face {{jcr:title}}">
+              <img id="featuredImgSmall" src="{{thumbnailMobile}}" alt="The North Face {{jcr:title}}">
               <div class="productCopy">
               
               <h1>{{jcr:title}}</h1><a class="shopNowSmall" href="{{jcr:path}}"> Shop Now </a>
               <h3>{{teaserText}}</h3>
-              
               </div>
+                            {{#if @first}}<div class="promoContent"><img src="img/2018-ecs-banner-d.jpg">
+<div class="textContainer"><center><p>The North Face Endurance Challenge provides athletes of all kinds to compete in a wide array of challenging terrain, trails, and paths to put you to the test.</p> <a href="https://www.thenorthface.com/get-outdoors/endurance-challenge.html" title="North Face Endurance Challenges">Explore Challenges</a></center>
+                           
+                            </div></div>{{/if}}
+
+                            {{#if @last}}<div class="promoContent"><img id="exploreFund" src="img/explore-fund-logo-white-no-org.svg">
+<div class="textContainer"><center><p>One of the major ways the Explore Fund supports outdoor exploration is through a $500,000 annual open-grants cycle. We’re looking for innovative ideas, both large and small in scale, that are changing the way we think about outdoor participation, accessibility, and protection of the environment. Since 2010, this program has given $2.75 million to more than 500 nonprofits and we’re thrilled to support more in 2018.</p> <a href="https://www.thenorthface.com/about-us/outdoor-exploration/explore-fund.html" style="width:50%;" title="North Face Endurance Challenges">Explore Challenges</a></center>
+                           
+                            </div></div>{{/if}}
+
             </div>
         {{/hits}}
     </script>
