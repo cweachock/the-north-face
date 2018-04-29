@@ -5,7 +5,11 @@ Use a JS Object JSON response from the North Face API call from [this link](http
 
 ## Overview
 
+<<<<<<< HEAD
 [The finished page](https://cweachock.github.io/the-north-face) presents a full width design using a modern JS framework called [Handlebars js](https://handlebarsjs.com/). And some minimal styling with media quieries, vector widths, initiated through a separate JSON file using Handlesbars and Jquery. I used handlebars because I think it had clean syntax, and it's easy to build, read, and maintain. There is also room for more complex conditional information if there is a need. It's all compiled through into a javascript function.  It's also easier to manage HTML elements so markup is kept separately. The build is hosted on [github](https://github.com) with [github pages](https://pages.github.com/). 
+=======
+[The finished page](https://cweachock.github.io/the-north-face) presents a full width design using a modern JS framework called [Handlebars js](https://handlebarsjs.com/). And some minimal styling with media quieries, vector widths, initiated through a separate JSON file using Handlesbars and Jquery. I used handlebars because I think it had clean syntax, and it's easy to build, read, and maintain. There is also room for more complex conditional information if there is a need. It's all compiled through into a javascript function.  It's also easier to manage HTML elements so markup is kept separately. The build is hosted on [github](github.com) with [github pages](https://pages.github.com/). 
+>>>>>>> c1747fada73fd91737dee9f7bd331c7a1a0b6884
 
 Content is run through a handlebars loop and iterated over using built-in helpers and styles with minimal CSS.
 
@@ -42,5 +46,9 @@ I use the built in operators @first and @last to conditionally show the Explore 
 
 ## Conclusion
 
+<<<<<<< HEAD
 The resulting was a low-level page that pulls the JSON data in a clean and simple way. For this challenge, I tried to focus on the logic and  implementation for the exercise to build a page in a sound way using my own experience and resources from [handlebarsjs.com](https://handlebarsjs.com), [stackoverflow](https://stackoverflow.com), and [github](https://github.com)
+=======
+The resulting was a low-level page that pulls the JSON data in a clean and simple way. For this challenge, I tried to focus on the logic and  implementation for the exercise to build a page in a sound way using my own experience and resources from [handlebarsjs.com](handlebarsjs.com), [stackoverflow](stackoverflow.com), and [github](github.com)
+>>>>>>> c1747fada73fd91737dee9f7bd331c7a1a0b6884
 
