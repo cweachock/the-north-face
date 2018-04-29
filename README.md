@@ -5,11 +5,7 @@ Use a JS Object JSON response from the North Face API call from [this link](http
 
 ## Overview
 
-<<<<<<< HEAD
 [The finished page](https://cweachock.github.io/the-north-face) presents a full width design using a modern JS framework called [Handlebars js](https://handlebarsjs.com/). And some minimal styling with media quieries, vector widths, initiated through a separate JSON file using Handlesbars and Jquery. I used handlebars because I think it had clean syntax, and it's easy to build, read, and maintain. There is also room for more complex conditional information if there is a need. It's all compiled through into a javascript function.  It's also easier to manage HTML elements so markup is kept separately. The build is hosted on [github](https://github.com) with [github pages](https://pages.github.com/). 
-=======
-[The finished page](https://cweachock.github.io/the-north-face) presents a full width design using a modern JS framework called [Handlebars js](https://handlebarsjs.com/). And some minimal styling with media quieries, vector widths, initiated through a separate JSON file using Handlesbars and Jquery. I used handlebars because I think it had clean syntax, and it's easy to build, read, and maintain. There is also room for more complex conditional information if there is a need. It's all compiled through into a javascript function.  It's also easier to manage HTML elements so markup is kept separately. The build is hosted on [github](github.com) with [github pages](https://pages.github.com/). 
->>>>>>> c1747fada73fd91737dee9f7bd331c7a1a0b6884
 
 Content is run through a handlebars loop and iterated over using built-in helpers and styles with minimal CSS.
 
