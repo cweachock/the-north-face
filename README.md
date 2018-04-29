@@ -46,9 +46,6 @@ I use the built in operators @first and @last to conditionally show the Explore 
 
 ## Conclusion
 
-<<<<<<< HEAD
-The resulting was a low-level page that pulls the JSON data in a clean and simple way. For this challenge, I tried to focus on the logic and  implementation for the exercise to build a page in a sound way using my own experience and resources from [handlebarsjs.com](https://handlebarsjs.com), [stackoverflow](https://stackoverflow.com), and [github](https://github.com)
-=======
-The resulting was a low-level page that pulls the JSON data in a clean and simple way. For this challenge, I tried to focus on the logic and  implementation for the exercise to build a page in a sound way using my own experience and resources from [handlebarsjs.com](handlebarsjs.com), [stackoverflow](stackoverflow.com), and [github](github.com)
->>>>>>> c1747fada73fd91737dee9f7bd331c7a1a0b6884
+The resulting was a low-level page that pulls the JSON data in a clean and simple way. For this challenge, I tried to focus on the logic and  implementation for the exercise to build a page in a sound way using my own experience and resources from [handlebarsjs.com](https://handlebarsjs.com), [stackoverflow](https://stackoverflow.com), and [github](https://github.com) The resulting was a low-level page that pulls the JSON data in a clean and simple way. For this challenge, I tried to focus on the logic and  implementation for the exercise to build a page in a sound way using my own experience and resources from [handlebarsjs.com](https://handlebarsjs.com), [stackoverflow](https://stackoverflow.com), and [github](https://github.com)
+
 
