@@ -5,13 +5,13 @@ Use a JS Object JSON response from the North Face API call from [this link](http
 
 ## Overview
 
-[The finished page](https://cweachock.github.io/the-north-face) presents a full width design using a modern JS framework called [Handlebars js](https://handlebarsjs.com/). And some minimal styling with media quieries, vector widths, initiated through a separate JSON file using Handlesbars and Jquery. I used handlebars because I think it had clean syntax, and it's easy to build, read, and maintain. There is also room for more complex conditional information if there is a need. It's all compiled through into a javascript function.  It's also easier to manage HTML elements so markup is kept separately. The build is hosted on [github](https://github.com) with [github pages](https://pages.github.com/). 
+[The finished page](https://cweachock.github.io/the-north-face) presents a simplified full width design layout using a modern JS framework called [Handlebars js](https://handlebarsjs.com/) with some minimal styling. I mostly tried to focus on the implementation portion and exploring more of Handlebars to package the data. I used handlebars because I think it has a clean syntax, and it's easy to build, read, and maintain. There is also room for more complex conditional logic if there is a need. In addition, it's also easier to manage the HTML elements so the markup is kept separately from the JS. The build is hosted on [github](https://github.com) with [github pages](https://pages.github.com/). 
 
-Content is run through a handlebars loop and iterated over using built-in helpers and styles with minimal CSS.
+Content is run through a handlebars loop and iterated over using built-in helpers.  
 
-### Looping through the Collection 
+### Looping through the Collections 
 
-Collections are shown using the each block operator through a JSON file. In this case, I stripped down main.js to only show the JSON data to be read by Handlebars. The list of values for the images, titles, and link text is looped through and compiled with handlebars to then show a HTML page. 
+I thought the best way to present the data would be to iterate through it. Since handlebars has great helper functions I can just go down the list and call up each featured collection using a [block operator](https://handlebarsjs.com/block_helpers.html) from the JSON data. In this case, I stripped down the main.js to only show the JSON data to be read by Handlebars the best I could. The list of values for the images, titles, and link text is looped through and compiled with handlebars to then show a HTML page. 
 
 
 ```
@@ -21,7 +21,7 @@ Collections are shown using the each block operator through a JSON file. In this
 
 ### Showing Content in the Loop
 
-The content is shown using expressions with the standard curly braces operators: {{}}. Which contain HTML, and text mixed with Handlebars expressions.  
+To show content in the loop I used the standard Handlebars expressions with the standard curly braces operators: {{}} wich references the JSON variable data in the file for each collection. This includes images, titles, text, and links. 
 
 like so:
 
@@ -32,7 +32,7 @@ like so:
 
 ### Showing the Explore Fund Grant and Endurance Challenge
 
-I use the built in operators @first and @last to conditionally show the Explore Grant Fund and the Endurance challenge callouts or promos. I use If statements to check which index we are on.   
+I thought it would be good to break up the loop by showing the additional elements after the first featured item in the collection. I used the built in operators @first and @last to conditionally show the Explore Grant Fund and the Endurance challenge callouts or promos. If statements were used to check which index we are on, then if we are on the selected index it shows the content (the Grant and the Challenge).  
 
 
 ```
@@ -42,6 +42,6 @@ I use the built in operators @first and @last to conditionally show the Explore 
 
 ## Conclusion
 
-The resulting was a low-level page that pulls the JSON data in a clean and simple way. For this challenge, I tried to focus on the logic and  implementation for the exercise to build a page in a sound way using my own experience and resources from [handlebarsjs.com](https://handlebarsjs.com), [stackoverflow](https://stackoverflow.com), and [github](https://github.com) The resulting was a low-level page that pulls the JSON data in a clean and simple way. For this challenge, I tried to focus on the logic and  implementation for the exercise to build a page in a sound way using my own experience and resources from [handlebarsjs.com](https://handlebarsjs.com), [stackoverflow](https://stackoverflow.com), and [github](https://github.com)
+The resulting was a low-level page that pulls the JSON data in a clean and simple way to show it on the frontend facing in HTML. I mostly tried to focus on the logic and implementation to pull the data from the API response in a way that could be re-templated. In addition, I tried to keep my CSS clean and small for the exercise. The CSS also uses vector widths, %'s, for responsiveness, and media queries at the smallest image resolution breakpoint which was 640px.    
 
 
